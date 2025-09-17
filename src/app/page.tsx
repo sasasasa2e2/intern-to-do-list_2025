@@ -15,7 +15,7 @@ export default function Home() {
         <Link href="https://x.com">
           <div className="border border-indigo-600 w-120 h-16 flex items-right gap-4">
             <img className="w-14 h-12" src="/images.png"></img>
-            twitterのカード
+            twitter
             <br />
             ロゴ
           </div>
