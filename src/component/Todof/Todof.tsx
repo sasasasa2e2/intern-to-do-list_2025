@@ -1,10 +1,10 @@
 "use client";
 import { FC, ChangeEvent, useState } from "react";
-import { Todoshow } from "@/component/Todoshow/Todoshow"; // 実際のパスに合わせて
+import { Todoshow } from "@/component/Todoshow/Todoshow"; 
 
 export const Todof: FC = () => {
-  const [lastName, setLastName] = useState(""); // 入力中の姓
-  const [submittedLastName, setSubmittedLastName] = useState(""); // 送信された姓
+  const [lastName, setLastName] = useState(""); 
+  const [submittedLastName, setSubmittedLastName] = useState(""); 
   const [lastNameErrorMessage, setLastNameErrorMessage] = useState("");
 
   const onChangeLastName = (e: ChangeEvent<HTMLInputElement>) => {
@@ -20,10 +20,10 @@ export const Todof: FC = () => {
       return;
     }
 
-    // ✅ 送信された姓を保存（子コンポーネントに渡す用）
+    
     setSubmittedLastName(lastName);
 
-    // ✅ 入力フォームをリセット
+    
     setLastName("");
   };
 
